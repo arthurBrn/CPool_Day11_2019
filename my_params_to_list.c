@@ -5,7 +5,7 @@
 ** Linked list
 */
 #include "include/my.h"
-#include "include/my_struct.h"
+#include "include/mylist.h"
 #include <stdlib.h>
 #include <stdio.h>
 
