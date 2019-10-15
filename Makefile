@@ -6,8 +6,15 @@
 ##
 
 SRC	=	my_params_to_list.c	\
+		my_list_size.c		\
+		my_apply_on_nodes.c	\
+		my_rev_list.c 		\
 		lib/my/my_putstr.c	\
-		lib/my/my_putchar.c
+		lib/my/my_putchar.c	\
+		lib/my/my_strdup.c	\
+		lib/my/my_strcpy.c	\
+		lib/my/my_strlen.c	\
+		lib/my/my_put_nbr.c
 
 OBJ	=	$(SRC:.c=.o)
 
