@@ -13,14 +13,16 @@ linked_list_t *my_params_to_list(int ac, char * const *av)
 {
     int i = 0;
     linked_list_t * head;
+    linked_list_t * start;
 
+    head = malloc(sizeof(linked_list_t));
+    start = head;
     if (ac < 1)
         return (0);
     while (ac > i) {
-        head = malloc(sizeof(linked_list_t));
         head->data = av[i];
         head->next = malloc(sizeof(linked_list_t));
         i++;
     }
-    return (head);
+    return (start);
 }
