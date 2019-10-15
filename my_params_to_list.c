@@ -20,7 +20,7 @@ linked_list_t *my_params_to_list(int ac, char * const *av)
     while (ac > i) {
         element = malloc(sizeof(linked_list_t));
         element->data = av[i];
-        element->tempo;
+        element->next = tempo;
         tempo = element;
         i++;
     }
