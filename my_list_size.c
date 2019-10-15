@@ -7,13 +7,14 @@
 
 #include "include/my.h"
 #include "incldue/mylist.h"
+#include <stdlib.h>
 
 int my_list_size(linked_list_t const *begin)
 {
     linked_list_t const *current_list = begin;
     int count = 0;
 
-    while (current_list != 0) {
+    while (current_list != NULL) {
         count++;
         current_list = current_list->next;
     }
