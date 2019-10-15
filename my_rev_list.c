@@ -12,7 +12,7 @@ int my_list_size(linked_list_t const *begin);
 
 void my_rev_list(linked_list_t **begin)
 {
-    int list_size = my_list_size(begin);
+    int list_size = my_list_size(*begin);
     int j = 0;
     linked_list_t *prev = NULL;
     linked_list_t *cur = begin;

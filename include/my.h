@@ -5,9 +5,6 @@
 ** Task 02 Day 09
 */
 
-#ifndef __MY_H
-#define __MY_H
-
 void my_putchar(char c);
 int my_isneg(int nb);
 int my_put_nbr(int nb);
@@ -40,5 +37,3 @@ char *my_strcat(char *dest, char const *src);
 char *my_strncat(char *dest, char const *src, int nb);
 int count_words(char const *str);
 int is_char(char one_char);
-
-#endif

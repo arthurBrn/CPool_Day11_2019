@@ -7,6 +7,7 @@
 
 #include "include/my.h"
 #include "include/mylist.h"
+#include <stdlib.h>
 
 linked_list_t *my_params_to_list(int ac, char * const *av)
 {
