@@ -11,7 +11,7 @@
 
 linked_list_t *my_params_to_list(int ac, char * const *av)
 {
-    int i = 0;
+    int i = ac;
     linked_list_t * head;
     linked_list_t * start;
 
@@ -22,7 +22,8 @@ linked_list_t *my_params_to_list(int ac, char * const *av)
     while (ac > i) {
         head->data = av[i];
         head->next = malloc(sizeof(linked_list_t));
-        i++;
+        head = head->next;
+        i--;
     }
     return (start);
 }
